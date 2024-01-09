@@ -33,19 +33,20 @@
         default_layer {
             display-name = "default";
             bindings = <
-&kp ESC    &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                                   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp BSPC
-&kp GRAVE  &kp Q   &kp W      &kp E     &kp R     &kp T                                    &kp Y      &kp U     &kp I      &kp O      &kp P     &kp BSLH
-&kp TAB    &kp A   &kp S      &kp D     &kp F     &kp G                                    &kp H      &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X      &kp C     &kp V     &kp B      &kp PAGE_DOWN    &kp PAGE_UP  &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                   &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &mo 1            &mo 2        &kp ENTER  &kp RALT  &kp RWIN   &kp RCTRL
+&kp ESC         &kp N1   &kp N2     &kp N3    &kp N4    &kp N5                                   &kp N6     &kp N7         &kp N8     &kp N9     &kp N0    &kp BSPC
+&kp GRAVE       &kp Q    &kp W      &kp E     &kp R     &kp T                                    &kp Y      &kp U          &kp I      &kp O      &kp P     &kp BSLH
+&kp TAB         &kp A    &kp S      &kp D     &kp F     &kp G                                    &kp H      &kp J          &kp K      &kp L      &kp SEMI  &kp SQT
+&mt LSHFT LPAR  &kp Z    &kp X      &kp C     &kp V     &kp B      &kp PAGE_UP    &kp PAGE_DOWN  &kp N      &kp M          &kp COMMA  &kp DOT    &kp FSLH  &mt RSHFT RPAR
+                &kp LALT &kp LWIN &mt LCTRL LBKT     &kp SPACE     &mo LOWER      &mo RAISE      &kp ENTER  &mt RCTRL RBKT &kp RWIN   &kp RALT
             >;
 
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN>,
-                <&inc_dec_kp RIGHT LEFT>;
+                <&inc_dec_kp RIGHT LEFT>,
+                <&inc_dec_kp DOWN UP>;
+                
         };
 
-        lower_layer {
+        lower_layer { 
             display-name = "lower";
             bindings = <
 &trans     &kp F1     &kp F2     &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
