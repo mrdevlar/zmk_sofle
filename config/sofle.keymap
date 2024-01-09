@@ -54,8 +54,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_NEXT K_PREV>,
-                <&inc_dec_kp K_PLAY_PAUSE K_STOP>;
+                <&inc_dec_kp LC(RIGHT) LC(LEFT)>,
+                <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         raise_layer {
@@ -68,7 +68,9 @@
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp LC(RIGHT) LC(LEFT)>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         adjust_layer {
