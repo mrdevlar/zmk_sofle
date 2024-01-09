@@ -33,30 +33,29 @@
         default_layer {
             display-name = "default";
             bindings = <
-&kp ESC         &kp N1   &kp N2     &kp N3    &kp N4    &kp N5                                   &kp N6     &kp N7         &kp N8     &kp N9     &kp N0    &kp BSPC
-&kp GRAVE       &kp Q    &kp W      &kp E     &kp R     &kp T                                    &kp Y      &kp U          &kp I      &kp O      &kp P     &kp BSLH
-&kp TAB         &kp A    &kp S      &kp D     &kp F     &kp G                                    &kp H      &kp J          &kp K      &kp L      &kp SEMI  &kp SQT
-&mt LSHFT LPAR  &kp Z    &kp X      &kp C     &kp V     &kp B      &kp PAGE_UP    &kp PAGE_DOWN  &kp N      &kp M          &kp COMMA  &kp DOT    &kp FSLH  &mt RSHFT RPAR
-                &kp LALT &kp LWIN &mt LCTRL LBKT     &kp SPACE     &mo LOWER      &mo RAISE      &kp ENTER  &mt RCTRL RBKT &kp RWIN   &kp RALT
+&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4          &kp N5                                   &kp N6     &kp N7          &kp N8     &kp N9    &kp N0    &kp BSPC
+&kp GRAVE       &kp Q   &kp W     &kp E     &kp R           &kp T                                    &kp Y      &kp U           &kp I      &kp O     &kp P     &kp BSLH
+&kp TAB         &kp A   &kp S     &kp D     &kp F           &kp G                                    &kp H      &kp J           &kp K      &kp L     &kp SEMI  &kp SQT
+&mt LSHFT LPAR  &kp Z   &kp X     &kp C     &kp V           &kp B      &kp PAGE_UP    &kp PAGE_DOWN  &kp N      &kp M           &kp COMMA  &kp DOT   &kp FSLH  &mt RSHFT RPAR
+                        &kp LALT  &kp LWIN  &mt LCTRL LBKT  &kp SPACE  &mo LOWER      &mo RAISE      &kp ENTER  &mt RCTRL RBKT  &kp RWIN   &kp RALT
+            >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
+        };
+
+        lower_layer {
+            display-name = "lower";
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans                            &kp KP_NUMBER_7  &kp KP_N8   &kp KP_N9     &kp KP_LPAR      &kp KP_RPAR   &trans
+&trans  &trans  &trans  &trans     &trans     &trans                            &kp KP_N4        &kp KP_N5   &kp KP_N6     &kp KP_MINUS     &kp KP_SLASH  &trans
+&trans  &trans  &trans  &kp EQUAL  &kp MINUS  &trans                            &kp KP_N1        &kp KP_N2   &kp KP_N3     &kp KP_PLUS      &trans        &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans    &kp KP_NUMLOCK  &kp KP_N0        &kp KP_DOT  &kp KP_EQUAL  &kp KP_MULTIPLY  &trans        &trans
+                &trans  &trans     &trans     &trans  &trans    &trans          &trans           &trans      &trans        &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_kp RIGHT LEFT>,
-                <&inc_dec_kp DOWN UP>;
-                
-        };
-
-        lower_layer { 
-            display-name = "lower";
-            bindings = <
-&trans     &kp F1     &kp F2     &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp N1     &kp N2     &kp N3       &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8           &kp N9     &kp N0    &kp F12
-&trans     &kp EXCL   &kp AT     &kp HASH     &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI         &kp COLON  &kp BSLH  &trans
-                      &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans           &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp K_NEXT K_PREV>,
+                <&inc_dec_kp K_PLAY_PAUSE K_STOP>;
         };
 
         raise_layer {
