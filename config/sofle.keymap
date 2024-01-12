@@ -65,6 +65,21 @@
             bindings = <&mo 4>;
             key-positions = <53 54>;
         };
+
+        underscore2 {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <40 41>;
+        };
+
+        equals2 {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 29>;
+        };
+
+        minus2 {
+            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {
