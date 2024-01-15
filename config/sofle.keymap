@@ -62,17 +62,17 @@
 
         underscore2 {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <40 39>;
+            key-positions = <40 39 38>;
         };
 
         equals2 {
             bindings = <&kp EQUAL>;
-            key-positions = <28 27>;
+            key-positions = <28 27 26>;
         };
 
         minus2 {
             bindings = <&kp MINUS>;
-            key-positions = <16 15>;
+            key-positions = <16 17 15>;
         };
     };
 
