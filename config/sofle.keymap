@@ -14,17 +14,11 @@
 #define RAISE 2
 #define ADJUST 3
 
-&mt {
-    tapping-term-ms = <100>;
-};
+&mt { tapping-term-ms = <100>; };
 
-&caps_word {
-    continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>;
-};
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
-&lt {
-    tapping-term-ms = <100>;
-};
+&lt { tapping-term-ms = <100>; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -95,7 +89,7 @@
                         &kp LALT  &kp LWIN  &mt LCTRL LBKT  &kp SPACE  &lt 1 DEL      &lt 2 BACKSPACE  &kp ENTER  &mt RCTRL RBKT  &kp RWIN   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp DOWN UP>;
         };
 
         symb_numpad {
