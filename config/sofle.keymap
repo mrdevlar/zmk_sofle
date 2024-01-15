@@ -72,7 +72,7 @@
 
         minus2 {
             bindings = <&kp MINUS>;
-            key-positions = <16 17 15>;
+            key-positions = <16 15 14>;
         };
     };
 
