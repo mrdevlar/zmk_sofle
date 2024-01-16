@@ -40,37 +40,22 @@
             key-positions = <36 49>;
         };
 
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <40 45>;
-        };
-
-        equals {
-            bindings = <&kp EQUAL>;
-            key-positions = <16 19>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <28 31>;
-        };
-
         function_switch {
             bindings = <&mo 4>;
             key-positions = <53 54>;
         };
 
-        underscore2 {
+        underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <40 39 38>;
         };
 
-        equals2 {
+        equals {
             bindings = <&kp EQUAL>;
             key-positions = <14 15 16>;
         };
 
-        minus2 {
+        minus {
             bindings = <&kp MINUS>;
             key-positions = <26 27 28>;
         };
