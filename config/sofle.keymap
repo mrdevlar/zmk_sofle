@@ -59,6 +59,11 @@
             bindings = <&kp MINUS>;
             key-positions = <26 27 28>;
         };
+
+        adjust_switch {
+            bindings = <&mo 3>;
+            key-positions = <55 56>;
+        };
     };
 
     keymap {
