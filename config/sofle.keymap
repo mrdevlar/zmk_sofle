@@ -79,7 +79,7 @@
                         &kp LALT  &kp LWIN  &mt LCTRL LBKT  &kp SPACE  &lt 1 DEL      &lt 2 BACKSPACE  &kp ENTER  &mt RCTRL RBKT  &kp RWIN   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp RIGHT LEFT>;
         };
 
         symb_numpad {
