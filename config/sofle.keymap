@@ -20,7 +20,7 @@
 
 &lt { tapping-term-ms = <100>; };
 
-&sensors { triggers-per-rotation = <32>; };
+&sensors { triggers-per-rotation = <8>; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
