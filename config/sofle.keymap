@@ -14,7 +14,7 @@
 #define RAISE 2
 #define ADJUST 3
 
-&mt { tapping-term-ms = <100>; };
+&mt { tapping-term-ms = <150>; };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
