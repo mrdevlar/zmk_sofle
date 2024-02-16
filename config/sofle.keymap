@@ -18,7 +18,7 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
-&lt { tapping-term-ms = <100>; };
+&lt { tapping-term-ms = <150>; };
 
 &sensors { triggers-per-rotation = <36>; };
 
