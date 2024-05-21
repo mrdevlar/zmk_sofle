@@ -78,7 +78,7 @@
 &kp GRAVE       &kp Q   &kp W     &kp E     &kp R           &kp T                                      &kp Y      &kp U           &kp I      &kp O     &kp P     &kp BSLH
 &kp TAB         &kp A   &kp S     &kp D     &kp F           &kp G                                      &kp H      &kp J           &kp K      &kp L     &kp SEMI  &kp SQT
 &mt LSHFT LPAR  &kp Z   &kp X     &kp C     &kp V           &kp B      &kp PAGE_UP    &kp PAGE_DOWN    &kp N      &kp M           &kp COMMA  &kp DOT   &kp FSLH  &mt RSHFT RPAR
-                        &kp LALT  &kp LWIN  &mt LCTRL LBKT  &kp SPACE  &lt 1 DEL      &lt 2 BACKSPACE  &kp ENTER  &mt RCTRL RBKT  &kp RWIN   &kp RALT
+                        &kp LALT  &kp LWIN  &mt LCTRL LBKT  &kp SPACE  &lt 2 DEL      &lt 2 BACKSPACE  &kp ENTER  &mt RCTRL RBKT  &kp RWIN   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp RIGHT LEFT>;
